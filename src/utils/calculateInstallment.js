@@ -12,7 +12,7 @@ export const calculateInstallment = (otr, dp, duration) => {
   }
 
   const totalInterest = principalDebt * interestBank;
-  const totalWithInterest = principalDebt + totalInterest;
+  const totalWithInterest = principalDebt + totalInterest;  
   const monthlyInstallment = totalWithInterest / duration;
 
   return {
